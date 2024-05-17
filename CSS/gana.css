@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('/img/ganador.jpg');
+    background-size: cover; 
+  }
+#mensajeGanador {
+    font-size: 80px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+    position: fixed; /* Fija la posición en la pantalla */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición exacta al centro */
+}
+.Memory{
+  position: absolute;
+  width: 182px;
+  right: 700px;
+  top: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40.187px;
+  line-height: px;
+  letter-spacing: 0.0882153px;
+}
+.restartbutton{
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  position: absolute;
+  width: 160px;
+  height: 52px;
+  left: 700px;
+  top: 10px;
+  border-radius: 10px; 
+  background: #39ffd4;
+}
+
+.restartbutton:hover{
+  background: #4afef2;
+}
+
+
+.reinicarpartidad{
+  position: absolute;
+  width: 182px;
+  right: 700px;
+  top: 64px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40.187px;
+  line-height: px;
+  letter-spacing: 0.0882153px;
+  color: #FFFFFF;
+}
+/* confeti */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&display=swap");
+.canvas-confetti-btn {
+    font-size: 5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    .tool-tip {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+      animation: shake 3s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      font-weight: 400;
+      padding: 5px;
+      border-radius: 4px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      font-size: 1rem;
+      color: rgb(100,100,100);
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -8px;
+        bottom: -5px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+      }
+    }
+    &:hover {
+      .tool-tip {
+        animation: none;
+        opacity: 0;
+      }
+    }
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    20%,
+    80% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: translate3d(0, -4px, 0);
+    }
+  
+    40%,
+    60% {
+      transform: translate3d(0, 4px, 0);
+    }
+  }
+
+  /* para que los botones se muevan */
+button span{
+  position: absolute;
+  display: block;
+}
+button span:nth-child(1){
+  height: 3px;
+  width:200px;
+  top:0px;
+  left:-200px;
+  background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span1 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes span1{
+  0%{
+      left:-200px
+  }
+  100%{
+      left:200px;
+  }
+}
+button span:nth-child(2){
+  height: 70px;
+  width: 3px;
+  top:-70px;
+  right:0px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span2 2s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes span2{
+  0%{
+      top:-70px;
+  }
+  100%{
+      top:70px;
+  }
+}
+button span:nth-child(3){
+  height:3px;
+  width:200px;
+  right:-200px;
+  bottom: 0px;
+  background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  animation: span3 2s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes span3{
+  0%{
+      right:-200px;
+  }
+  100%{
+      right: 200px;
+  }
+}
+
+button span:nth-child(4){
+  height:70px;
+  width:3px;
+  bottom:-70px;
+  left:0px;
+  background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: span4 2s linear infinite;
+  animation-delay: 4s;
+}
+@keyframes span4{
+  0%{
+      bottom: -70px;
+  }
+  100%{
+      bottom:70px;
+  }
+}
+
+button:hover{
+  transition: all .5s;
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+  animation-play-state: paused;
+}

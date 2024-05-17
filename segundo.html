@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="shortcut icon" href="img/logo2.png" />
+    <title>Juego de memorama</title>
+    
+</head>
+<body>
+    <div class="frame169" id="jugador1Scoreboard" style="display: none;">
+        <div class="Player1" data-id="P1">
+            <div class="modal-header">
+                Equipo 1
+            </div>
+            <div class="team-name" id="equipo1Name">Equipo 1</div> <!-- Aquí se mostrará el nombre del Equipo 1 -->
+            <div class="modal-section"><span>Puntos: </span> <span1 id="score1">0</span1></div>
+            <div class="modal-section"><span>Tiempo: </span> <span1 id="tiempo1"></span1> </div>
+        </div>
+    </div>
+
+
+    <div class="frame170" id="jugador2Scoreboard" style="display: none;">
+        
+        <div class="Player2" data-id="P2">
+            <div class="modal-header">
+                Equipo 2
+            </div>
+            <div class="team-name" id="equipo2Name">Equipo 2</div> <!-- Aquí se mostrará el nombre del Equipo 1 -->
+            <div class="modal-section"><span>Puntos: </span> <span1 id="score2">0</span1></div>
+            <div class="modal-section"><span>Tiempo: </span> <span1 id="tiempo2"></span1> </div>
+        </div>
+    </div>
+    
+    <main>
+        <section class="section1">
+            <table>
+                <tr>
+                    <td><button id="0" onclick="destapar(0)">1</button></td>
+                    <td><button id="1" onclick="destapar(1)">2</button></td>
+                    <td><button id="2" onclick="destapar(2)">3</button></td>
+                    <td><button id="3" onclick="destapar(3)">4</button></td>
+                    <td><button id="4" onclick="destapar(4)">5</button></td>
+                    <td><button id="5" onclick="destapar(5)">6</button></td>
+                </tr>
+                <tr>  
+                    <td><button id="6" onclick="destapar(6)">7</button></td>
+                    <td><button id="7" onclick="destapar(7)">8</button></td>
+                    <td><button id="8" onclick="destapar(8)">9</button></td>
+                    <td><button id="9" onclick="destapar(9)">10</button></td>
+                    <td><button id="10" onclick="destapar(10)">11</button></td>
+                    <td><button id="11" onclick="destapar(11)">12</button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" onclick="destapar(12)">13</button></td>
+                    <td><button id="13" onclick="destapar(13)">14</button></td>
+                    <td><button id="14" onclick="destapar(14)">15</button></td>
+                    <td><button id="15" onclick="destapar(15)">16</button></td>
+                    <td><button id="16" onclick="destapar(16)">17</button></td>
+                    <td><button id="17" onclick="destapar(17)">18</button></td>
+                </tr>
+                <tr> 
+                    <td><button id="18" onclick="destapar(18)">19</button></td>
+                    <td><button id="19" onclick="destapar(19)">20</button></td>
+                    <td><button id="20" onclick="destapar(20)">21</button></td>
+                    <td><button id="21" onclick="destapar(21)">22</button></td>
+                    <td><button id="22" onclick="destapar(22)">23</button></td>
+                    <td><button id="23" onclick="destapar(23)">24</button></td>
+                </tr>
+                <tr>
+                    <td><button id="24" onclick="destapar(24)">25</button></td>
+                    <td><button id="25" onclick="destapar(25)">26</button></td>
+                    <td><button id="26" onclick="destapar(26)">27</button></td>
+                    <td><button id="27" onclick="destapar(27)">28</button></td>
+                    <td><button id="28" onclick="destapar(28)">29</button></td>
+                    <td><button id="29" onclick="destapar(29)">30</button></td>
+                </tr>
+                
+            </table>
+        </section>
+        <!--<section id="cuadro" class="section2">
+            <h2 id="aciertos" class="estadisticas">Equipo 1: 0</h2>
+            <h2 id="movimientos" class="estadisticas">Equipo 2: 0</h2>
+            <h2 class="estadisticas">Equipo 3: 0</h2>
+            <h2 class="estadisticas">Equipo 4: 0</h2>
+        </section> 
+        -->
+    
+    </main>
+    <div  class="Memory">
+        <button class="restartbutton" onclick="window.location.href='index.html'">Regresar</button>
+    </div>
+
+    <div  class="reinicarpartidad">
+        <button class="restartbutton" onclick="window.location.href='segundo.html'">Reiniciar</button>
+    </div>
+
+    <div class="ganadoress" style="display: none;">
+        <button class="restartbutton" onclick="window.open('ganadores.html', '_blank')">Ver Tabla de Ganadores</button>
+    </div>
+
+    <div class="frame171" id="jugador3Scoreboard" style="display: none;">
+        
+        <div class="Player3" data-id="P3">
+            <div class="modal-header">
+                Equipo 3
+            </div>
+            <div class="team-name" id="equipo3Name">Equipo 3</div> <!-- Aquí se mostrará el nombre del Equipo 1 -->
+            <div class="modal-section"><span>Puntos: </span> <span1 id="score3">0</span1></div>
+            <div class="modal-section"><span>Tiempo: </span> <span1 id="tiempo3"></span1> </div>
+        </div>
+    </div>
+
+    <div class="frame172" id="jugador4Scoreboard" style="display: none;">
+        
+        <div classs="Player4" data-id="P4">
+            <div class="modal-header">
+                Equipo 4
+            </div>
+            <div class="team-name" id="equipo4Name">Equipo 4</div> <!-- Aquí se mostrará el nombre del Equipo 1 -->
+            <div class="modal-section"><span>Puntos: </span> <span1 id="score4">0</span1></div>
+            <div class="modal-section"><span>Tiempo: </span> <span1 id="tiempo4"></span1> </div>
+        </div>
+    </div>
+
+    <section class="modal ">
+        <div class="modal_container">
+            <tr>
+                <td><button id="modales" onclick="destapar(29)"></button></td>
+            </tr>
+            <h2 id="titulo_respuesta" class="modal_title">cualquier titulo</h2>
+            <p id="descripcion_respuesta" class="modal_paragraph"> cualquier descripción </p>
+            <a href="#" class="modal_close">Cerrar</a>
+        </div>
+    </section>
+    
+    <section class="modal4" id="modalPlayer1" style="display: none;">
+        <div class="modal-contenido">
+            <p class="texto-negro">Turno de </p>
+        </div>
+    </section>
+    <section class="modal4" id="modalPlayer2" style="display: none;">
+        <div class="modal-contenido">
+            <p class="texto-negro">Turno de </p>
+        </div>
+    </section>
+    <section class="modal4" id="modalPlayer3" style="display: none;">
+        <div class="modal-contenido">
+            <p class="texto-negro">Turno de </p>
+        </div>
+    </section>
+    <section class="modal4" id="modalPlayer4" style="display: none;">
+        <div class="modal-contenido">
+            <p class="texto-negro">Turno de </p>
+        </div>
+    </section>
+
+    
+     <!-- Modales nuevos -->
+    <section class="modal5" id="modalPlayers1" style="display: none;">
+        <div class="modal-contenido1">
+            <p>Turno del equipo 1 </p>
+        </div>
+    </section>
+
+    <section class="modal5" id="modalPlayers2" style="display: none;">
+        <div class="modal-contenido1">
+            <p>Turno del equipo 2 </p>
+        </div>
+    </section>
+
+    <section class="modal5" id="modalPlayers3" style="display: none;">
+        <div class="modal-contenido1">
+            <p>Turno del equipo 3 </p>
+        </div>
+    </section>
+    
+    <section class="modal5" id="modalPlayers4" style="display: none;">
+        <div class="modal-contenido1">
+            <p>Turno del equipo 4 </p>
+        </div>
+    </section>
+
+    <div class="rotating-text-wrapper" id="turno1" style="display: none;">
+        <h2 class="gana1">Excelente!!! &#128079;</h2>
+    </div>
+
+    <div class="rotating-text-wrapper" id="turno2" style="display: none;">
+        <h2 class="gana2">Asombroso!!! &#128170;</h2>
+    </div>
+
+    <div class="rotating-text-wrapper" id="turno3" style="display: none;">
+        <h2 class="gana3">Sorprendente!!! &#128585;</h2>
+    </div>
+
+    <div class="rotating-text-wrapper" id="turno4" style="display: none;">
+        <h2 class="gana4">Sigue asi!!! &#128526</h2>
+    </div>
+
+    <!-- Modales de ganadores -->
+    <section class="modal6" id="modalganador1" style="display: none;">
+        <div class="modal-contenido2">
+            <p>¡EQUIPO 1 GANA!</p>
+        </div>
+    </section>
+    
+    <script src="./JS/main.js"></script>
+    <script src="./JS/score.js"></script>
+    
+</body>
+
+</html>

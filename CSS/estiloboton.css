@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,700,100italic,300italic,400italic,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+html {
+  height: 100%;
+}
+body {
+  font-family: sams-serif;
+  min-height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(/img/fondo5.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; /* Ajusta la imagen para que se muestre completa sin distorsionarse */
+}
+
+.owoo{
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 25px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 720px; /* Ajusta la distancia desde la parte superior según sea necesario */
+  right: 20px; /* Ajusta la distancia desde la izquierda según sea necesario */
+}
+
+.titulo {
+  text-align: center; /* Centra el texto */
+  position: absolute; /* Fija el div en una posición */
+  top: 0; /* Lo posiciona en la parte superior */
+  left: center; /* Lo desplaza al centro horizontal */
+   /* Ajusta la posición horizontalmente */
+  color: white; /* Color negro */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #4ecccc;
+  
+  
+    
+}
+.empresa {
+  font-family: Arial, sans-serif; /* Utiliza la familia de fuentes preferida por CICY */
+  font-size: 24px; /* Tamaño de fuente específico */
+  color: #004080; /* Color específico utilizado por CICY */
+  font-weight: bold; /* Peso de la fuente en negrita */
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  max-width: 150px;
+  /*background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+
+}
+
+.btn-bg {
+  display: flex;
+  margin-top: 75px;
+  justify-content: center;
+}
+
+
+label {
+  font-size: 30px;
+  color: white; /* Cambiar el color a un azul intenso */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregar un efecto de sombra al texto */
+
+  /* Estilo adicional para darle un toque gamer */
+  /*background-color: #e4e4e4;*/ /* Fondo oscuro */ 
+  padding: 10px; /* Añadir espacio interno alrededor del texto */
+  border-radius: 5px; /* Esquinas redondeadas */
+  display: inline-block; /* Asegurar que el fondo abarque solo el contenido del texto */
+  transition: background-color 0.3s ease; /* Agregar transición suave para cambios de color de fondo */
+}
+
+/* Cambio de color de fondo al pasar el ratón (hover) */
+label:hover {
+  background: linear-gradient(160.65deg, rgba(0, 0, 0, 0.6) 0.74%, rgba(0, 0, 0, 0.1) 102.03%);
+}
+
+form {
+  text-align: center;
+  
+}
+
+label {
+  font-size: 50px;
+}
+
+/* Diseño de nombres */
+#playerCount {
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: left; /* Corregido para centrar el texto */
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 3px solid #4ecccc;
+  box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+}
+
+.centrado1{
+  width: 35vw;
+  font-size: 25px;
+  padding: 35px; /* Reducido de 200px para un mejor ajuste */
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  border-radius: 8px;
+  background: rgb(255,255,255,0.2);
+  border: 3px solid #4ecccc;
+  box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+  transform: translateY(-50%); /* Alinea el contenido dentro del elemento al centro */                  
+}
+
+.nombresconta {
+  margin-top: 20px; /* Espacio arriba del contenedor */
+  padding: 1px; /* Espaciado interno para que no esté pegado al borde */
+   /* Un ligero fondo gris para resaltar el área */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.nombresconta label {
+  display: block; /* Hacer que cada etiqueta ocupe su propia línea */
+  margin-top: 10px; /* Espacio antes de cada etiqueta */
+  margin-bottom: 5px; /* Espacio después de cada etiqueta */
+  font-weight: bold; /* Hacer el texto de las etiquetas en negrita */
+}
+
+.nombresconta input[type="text"] {
+  font-size: 15px;
+  width: 100%; /* Hacer que los inputs ocupen todo el ancho disponible */
+  padding: 8px; /* Espaciado interno para el texto */
+  margin-bottom: 10px; /* Espacio después de cada input */
+  border: 3px solid #4ecccc;
+  border-radius: 8px; /* Bordes ligeramente redondeados */
+  box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+}
+
+.wrapper{
+  
+  position: absolute;
+  top:65%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height:auto;
+}
+
+
+
+body .btn-bg.Pokemon .btn-group .ball .btn-1 {
+  border: 3px solid #4ecccc;
+  border-radius: 5px;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1:hover {
+  border: 3px solid #4ecccc;
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1:hover .pokemon-ball::before {
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1:hover .pokemon-ball::after {
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1:hover a {
+  transition: none;
+  color: transparent;
+  z-index: 999;
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1:hover a::before {
+  transform: translate3d(100%, 0, 0);
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1:hover a span:first-child::before,
+body .btn-bg.Pokemon .btn-group .ball .btn-1:hover a span:nth-child(2)::before {
+  transition-delay: 0.3s;
+  transform: translate3d(0, 0, 0);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 .pokemon-ball {
+  position: absolute;
+  content: 'Go!';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 .pokemon-ball::before,
+body .btn-bg.Pokemon .btn-group .ball .btn-1 .pokemon-ball::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #7adeff;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 .pokemon-ball::after {
+  top: 50%;
+  background: #96f687;
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 a {
+  color: #434342;
+  font-weight: 600;
+  font-size: 1.5em;
+  transition: color 0.5s 0.25s;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: 999;
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 a::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #ff001e;
+  top: calc(50% - 2.5px);
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transform: translate3d(-100%, 0, 0);
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 a span {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 a span::before {
+  position: absolute;
+  content: attr(data-letters);
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  transition: transform 0.5s;
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 a span:first-child::before {
+  top: 0;
+  color: #ef594f;
+  transform: translate3d(0, 100%, 0);
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 a span:nth-child(2) {
+  top: 50%;
+  
+}
+body .btn-bg.Pokemon .btn-group .ball .btn-1 a span:nth-child(2)::before {
+  bottom: 0;
+  transform: translate3d(0, -100%, 0);
+  
+}
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  
+}
+@media screen and (max-width: 480px) {
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+}
+.btn {
+  margin: 0 30px 30px 30px;
+  display: block;
+  
+}
+.btn-info {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 3.5em;
+  color: #fff;
+  
+}
+.btn-mention {
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: 'Lato';
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  color: #fff;
+  
+}
+.btn-mention span {
+  font-size: 1.2em;
+  font-weight: 600;
+  
+}
+.btn-1 {
+  cursor: pointer;
+  overflow: visible;
+  outline: none;
+  color: #ffffff;
+  position: relative;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 1rem 3rem 1rem 3rem;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-size: 1.5em;
+  
+}
+.btn-1 a {
+  text-decoration: none;
+  
+}
+@-moz-keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.975);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@-webkit-keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.975);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@-o-keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.975);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.975);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@-moz-keyframes smallwave {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+    opacity: 0.25;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes smallwave {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+    opacity: 0.25;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.8;
+  }
+}
+@-o-keyframes smallwave {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+    opacity: 0.25;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.8;
+  }
+}
+@keyframes smallwave {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+    opacity: 0.25;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.8;
+  }
+}
+
+

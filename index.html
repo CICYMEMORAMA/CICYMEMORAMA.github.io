@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/estiloboton.css">
+    <link rel="shortcut icon" href="img/logo2.png" />
+    <title>Juego de memorama</title>
+</head>
+<body>
+    
+<div class="loguito">
+    <img class="logo" src="img/logo2.png">
+</div>
+
+<div class="titulo">
+  <div>
+    <h1>CENTRO DE INVESTIGACIÓN CIENTÍFICA DE YUCATÁN, A.C.</h1>
+    <h1>UNIDAD DE CIENCIA DEL AGUA</h1>
+  </div>
+  
+</div>
+<div class="centradoboton">
+<button class="owoo" onclick="window.location.href='instrucciones.html'">Como jugar</button>
+</div>
+
+<div class="centrado1">
+    <form id="playerForm" onsubmit="guardarNumeroJugadores(event)">
+        <input type="number" id="playerCount" placeholder="Número de Equipos" name="playerCount" min="1" max="4" onchange="mostrarNombresEquipos()">
+        <input type="number" id="add-time" placeholder="Tiempo para Agregar (segundos)" min="1">
+        <div class="nombresconta" id="teamNamesContainer" ></div>
+    </form>
+    
+</div>
+
+<div class="centrado">
+    <div class="btn-bg Pokemon">
+        <div class="btn-group">
+            <div class="btn ball">
+                <button class="btn-1" onclick="ejecutarAmbasFunciones(event)">
+                    <div class="pokemon-ball"></div><a>Memorama<span data-letters="Go!"></span><span data-letters="Go!"></span></a>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script src="./JS/verificacion.js"></script>
+</body>
+</html>

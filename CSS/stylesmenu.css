@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    font-family: sams-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; /* Ajusta la imagen para que se muestre completa sin distorsionarse */
+}
+
+
+#playerCount {
+    padding: 10px;
+    font-size: 50px;
+    border: 2px solid #1e90ff; /* Borde azul */
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Fondo negro */
+    color: #1e90ff; /* Texto azul */
+    outline: none;
+    text-align: center; /* Alinea el texto en el centro */
+}
+
+label {
+    font-size: 30px;
+    color: #000000; /* Cambiar el color a un azul intenso */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregar un efecto de sombra al texto */
+
+    /* Estilo adicional para darle un toque gamer */
+    /*background-color: #e4e4e4;*/ /* Fondo oscuro */ 
+    padding: 10px; /* Añadir espacio interno alrededor del texto */
+    border-radius: 5px; /* Esquinas redondeadas */
+    display: inline-block; /* Asegurar que el fondo abarque solo el contenido del texto */
+    transition: background-color 0.3s ease; /* Agregar transición suave para cambios de color de fondo */
+}
+
+/* Cambio de color de fondo al pasar el ratón (hover) */
+label:hover {
+    background-color: #2ecc71; /* Cambiar a verde al pasar el ratón */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 50px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100px;
+}
+
+.wrapper{
+    position: absolute;
+    top:65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}

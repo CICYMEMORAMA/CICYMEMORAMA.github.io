@@ -1,0 +1,581 @@
+
+.button-flipped .card-number {
+    display: none;
+  }
+html {
+    height: 100%;
+}
+
+body{
+    /*background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);*/
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/fondo2.jpg);
+    
+}
+
+.section1{
+    background: rgb(238,174,202);
+    margin-top: 130px;
+    background: linear-gradient(160.65deg, rgba(75, 183, 230, 0) 0.74%, rgba(75, 183, 230, 0.6) 50%, rgba(75, 183, 230, 0) 102.03%);
+    padding: 0 10px 10px 10px; 
+}
+
+
+button{
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold; 
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.section2{
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 250px;
+    height: 400px;
+    padding: 0 20px;
+}
+
+
+
+footer{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 80%;
+}
+
+/*Abre ventana cuando consigue el par de imagenes*/ 
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.modal_container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-image: url(/img/fondog.jpg);
+    /* background: #3498DB; */
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: lem;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+
+
+.modal_title{
+    font-size: 3rem;
+    color: white;
+
+}
+
+.modal_paragraph{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: white;
+    text-align: justify;
+
+}
+
+
+#modales {
+    width: 350px;
+    height: 350px;
+    font-size: 50px;
+    padding: 100px -500px;
+    background: rgb(255,255,255,0.2);
+    border: 3px solid #4ecccc;
+}
+
+.modal_close{
+    display: none;
+    position: fixed;
+    top: 16%;
+    left: 63%;
+    text-decoration: none;
+    color:#fff;
+    background-color: #F26250;
+    padding: 1em 1em;
+    border: 1px solid;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 200;
+    transition: background-color .3s;
+}
+
+.modal_close:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
+
+.modal4 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.modal5 {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+  
+.modal-contenido1 {
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 34px;
+}
+
+.texto-negro {
+    color: black;
+}
+.texto-negro {
+    color: black;
+}
+.modal-contenido {
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    padding: 80px;
+    color: black;
+    border-radius: 50px;
+}
+  
+.modal6 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+  
+
+/* Estilo para el elemento a animar */
+.rotating-text-wrapper {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-size: 40px; /* Ajusta el tamaño de la fuente según tus necesidades */
+}
+
+.gana1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.gana2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.gana3 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.gana4 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+  /* Definición de la animación */
+  @keyframes moveUp {
+    to {
+      bottom: 0; /* Mueve el texto hacia arriba hasta la posición original */
+    }
+  }
+  /* Estilos para hacer el texto más grande y llamativo */
+  .modal-contenido p {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+  }
+
+
+#cuadro {
+    position: fixed;
+    bottom: 250px;
+    right: 20px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #1e90ff; /* Azul */
+    color: #fff; /* Texto blanco */
+    border: 2px solid #ff4500; /* Borde naranja */
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+#cuadro:hover {
+    background-color: #ff4500; /* Cambia el fondo a naranja al pasar el mouse */
+    color: #1e90ff; /* Cambia el texto a azul al pasar el mouse */
+}
+
+/* Estilos para el botón de regresar */
+#btnRegresar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #1e90ff; /* Azul */
+    color: #fff; /* Texto blanco */
+    border: 2px solid #ff4500; /* Borde naranja */
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+#btnRegresar:hover {
+    background-color: #ff4500; /* Cambia el fondo a naranja al pasar el mouse */
+    color: #1e90ff; /* Cambia el texto a azul al pasar el mouse */
+}
+
+.modal-header {
+    color: #004d40; /* Dark green */
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.team-name {
+    font-size: 1.5em;
+    margin-bottom: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-section {
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+.modal-section span {
+    font-weight: bold;
+}
+
+/* Clases de colores para los modales de los jugadores */
+.modal-rojo {
+    background-color: #ff6961; /* Cambia este color al que desees para el jugador 1 */
+}
+
+.modal-azul {
+    background-color: #84b6f4; /* Cambia este color al que desees para el jugador 2 */
+}
+
+.modal-amarillo {
+    background-color: #fdfd96; /* Cambia este color al que desees para el jugador 3 */
+}
+
+.modal-verde {
+    background-color: #77dd77; /* Cambia este color al que desees para el jugador 4 */
+}
+
+.frame169{ /*Player 1 scoreboard*/
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+
+    
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    width: 220px;
+    height: 270px;
+    left: 0px;
+    top: 10px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    
+    
+    border-radius: 8px;
+}
+
+.frame170{ /*Player 2 scoreboard*/
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+
+    
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    width: 220px;
+    height: 270px;
+    right: 0px; /* Cambia de 'left' a 'right' para posicionar a la derecha */
+    top: 10px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    
+    
+    border-radius: 8px;
+
+}
+
+.frame171{ /*Player 3 scoreboard*/
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+   
+    margin: 0;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 220px;
+    height: 270px;
+    left: 0px; /* Cambia de 'left' a 'right' para posicionar a la derecha */
+    top: 430px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    
+   
+    border-radius: 8px;
+}
+.frame172 {
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    
+    margin: 0;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 220px;
+    height: 270px;
+    right: 0px; /* Cambia de 'left' a 'right' para posicionar a la derecha */
+    top: 430px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    
+    
+    border-radius: 8px;
+}
+
+.Memory{
+    position: absolute;
+    width: 182px;
+    left: 400px;
+    top: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40.187px;
+    line-height: px;
+    letter-spacing: 0.0882153px;
+    color: #FFFFFF;
+}
+
+.reinicarpartidad{
+    position: absolute;
+    width: 182px;
+    left: 400px;
+    top: 64px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40.187px;
+    line-height: px;
+    letter-spacing: 0.0882153px;
+    color: #FFFFFF;
+}
+
+.ganadoress{
+    position: absolute;
+    width: 182px;
+    left: 400px;
+    top:120px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40.187px;
+    line-height: px;
+    letter-spacing: 0.0882153px;
+    color: #FFFFFF;
+}
+
+.restartbutton{
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    position: absolute;
+    width: 160px;
+    height: 52px;
+    left: 700px;
+    top: 10px;
+    border-radius: 10px; 
+    background: linear-gradient(160.65deg, rgba(75, 183, 230, 0) 0.74%, rgba(75, 183, 230, 0.6) 50%, rgba(75, 183, 230, 0) 102.03%);
+}
+
+.margen-superior {
+    margin-top: 50px; /* Ajusta el valor del margen según sea necesario */
+}
+
+
+
+
+@keyframes colorChange {
+    0% { color: #b90e0e; } /* Estado inicial del color */
+    50% { color: #00ff00; } /* Color a los 2 segundos */
+    100% { color: #ece006; } /* Vuelve al color inicial */
+}
+
+ /* para que los botones se muevan */
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+button:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+    animation-play-state: paused;
+}
